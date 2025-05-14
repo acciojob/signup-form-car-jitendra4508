@@ -1,16 +1,71 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
 	<link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 	<!-- the entire body must be written by student -->
+
+	<style>
+		.form-group{margin-bottom: 20px;}
+	</style>
+
+
+	<form action="" method="post">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="email" required>
+        </div>
+        <div class="form-group">
+            <span>Gender:</span>
+            <input type="radio" name="gender" id="gender_m">
+            <label for="gender_m">Male</label>            
+            <input type="radio" name="gender" id="gender_f">
+            <label for="gender_f">Female</label>
+        </div>
+        <div class="form-group">
+            <label for="cars">Car Brands:</label>
+            <select id="cars" name="cars" required>
+                <option selected>Please choose an option</option>
+                <option value="Maruti">Maruti</option>
+                <option value="Nexa">Nexa</option>
+                <option value="Tata">Tata</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" placeholder="Age" required>
+        </div>
+        <div class="form-group">
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+        </div>
+        <div class="form-group">
+            <label for="tel">Phone Number</label>
+            <input type="tel" id="tel" name="tel" placeholder="xxx-xxx-xxxx">
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+        </div>
+        <div class="form-group">
+            <div class="form-check">
+                <input type="checkbox" id="tos">
+                <label for="tos">
+                    I agree to the TOS
+                </label>
+            </div>
+        </div>        
+        <div class="form-btn">
+           <button type="submit">Submit</button>
+        </div>
+    </form>	
+	
     <script type="text/javascript" src="./script.js">
 </script>
-
 </body>
-
 </html>
